@@ -30,7 +30,7 @@
             overlay.style.position = "absolute";
             overlay.style.top = overlay.style.left = "0";
             overlay.style.width = overlay.style.height = "100%";
-            overlay.style.zIndex = "10";
+            overlay.style.zIndex = "0";
             overlay.style.opacity = opacity; // Apply the opacity here
             // Overlay is appended as a child of the original image's parent element (the thing we did query select), making it go on top
             thumbnail.parentElement.appendChild(overlay);
@@ -43,7 +43,7 @@
 
         // Get URL of the overlay image
         function getOverlayUrl(index) {
-            return chrome.runtime.getURL(`assets/images/${index}.png`);
+            return chrome.runtime.getURL(`assets/images/${index}.PNG`);
         }
 
         // Observe the entire body of the document for changes
