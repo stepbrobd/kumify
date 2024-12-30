@@ -2,7 +2,7 @@
   "_comment": "this is p much the base stuff",
   "manifest_version": 3,
   "name": "Sechify",
-  "version": "1.2",
+  "version": "1.3",
   "icons": {
     "128": "assets/icon/icon-128.png"
   },
