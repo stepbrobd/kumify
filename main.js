@@ -24,6 +24,9 @@
 
         // Apply new (and improved) thumbnails
         function changeThumbnail(thumbnail, OverlayUrl) {
+
+            if (thumbnail.dataset.overlayApplied) return;
+
             // Create the overlay image
             const overlay = document.createElement("img");
             overlay.src = OverlayUrl;
@@ -34,6 +37,7 @@
             overlay.style.opacity = opacity; // Apply the opacity here
             // Overlay is appended as a child of the original image's parent element (the thing we did query select), making it go on top
             thumbnail.parentElement.appendChild(overlay);
+            thumbnail.dataset.overlayApplied = "true";
         }
 
         // Get random image index
