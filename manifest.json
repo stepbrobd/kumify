@@ -1,10 +1,10 @@
 {
   "_comment": "this is p much the base stuff",
   "manifest_version": 3,
-  "name": "Sechify",
-  "version": "1.31",
+  "name": "Kumify",
+  "version": "1.0.0",
   "icons": {
-    "128": "assets/icon/icon-128.png"
+    "128": "assets/icon/IconKumiko.png"
   },
   "description": "Make every YouTube video into a Blue-Archive Sechi Cameo!",
   "host_permissions": ["https://www.youtube.com/*"],
