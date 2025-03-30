@@ -6,7 +6,7 @@
   "icons": {
     "128": "assets/icon/IconKumiko.png"
   },
-  "description": "Make every YouTube video into a Blue-Archive Sechi Cameo!",
+  "description": "Make every YouTube Thumbnail into Kumiko!",
   "host_permissions": ["https://www.youtube.com/*"],
   "permissions": [
     "storage"
