@@ -1,89 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overlay Toggle</title>
+  <head>
+    <meta charset="UTF-8" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            width: 220px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f1f1f1;
-        }
-        button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            align-items: center;
-            
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-        }
-        .profile img {
-            width: 50px;
-            height: 50px;
-            margin-right: 5px;
-        }
-        .icons{
-            margin-top: 10px;
-        }
-        .icons a {
-            margin: 5px;
-            text-decoration: none;
-        }
-        .icons img {
-            height: 40px;
-        }
-
-        header {
-            font-size: 36px; /* Makes the text larger */
-            font-weight: bold; /* Makes the text bold */
-            margin-bottom: 20px;
-        }
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background: #fff;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        user-select: none;
+      }
     </style>
-</head>
-<body>
-    <header>Kumify</header>
-    <button id="toggle-overlay">Disable Overlays</button>
-
-    <div class="footer">
-        <div class="profile">
-            <img src="assets/popup/profileIcon.jpg" alt="Profile Picture">
-            <span>Created by Denzmar</span>
-        </div>
-    </div>
-    <div class="icons">
-        
-        <a href="https://www.reddit.com/user/no_life_redditor/" target="_blank">
-            <img src="assets/popup/Reddit.png" alt="Reddit">
-        </a>
-        <a href="https://github.com/DenzHa24/kumify" target="_blank">
-            <img src="assets/popup/github.png" alt="Github">
-        </a>
-    </div>
-    <footer>v1.2.0 Huge thanks to Chikenuwu!</footer>
-    <a style="color:#f1f1f1;" href="https://www.youtube.com/watch?v=Cwe8ht7ACBw&ab_channel=DaienTroop45" target="_blank">KUMIKO EASTER EGG</a>
-
+  </head>
+  <body>
+    <label>
+      <input type="checkbox" id="overlay-toggle" />
+      Enable overlay
+    </label>
     <script src="popup.js"></script>
-</body>
+  </body>
 </html>

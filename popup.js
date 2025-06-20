@@ -1,29 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('toggle-overlay');
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("overlay-toggle");
 
-    // Initialize button text based on stored state
-    chrome.storage.local.get(['overlayEnabled'], (result) => {
-        const enabled = result.overlayEnabled !== false; // default to true if not set
-        toggleButton.textContent = enabled ? 'Disable Overlays' : 'Enable Overlays';
+  chrome.storage.local.get(["overlayEnabled"], (result) => {
+    const enabled = result.overlayEnabled !== false;
+    checkbox.checked = enabled;
+  });
+
+  checkbox.addEventListener("change", () => {
+    const newState = checkbox.checked;
+
+    chrome.storage.local.set({ overlayEnabled: newState }, () => {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        chrome.tabs.reload(tabs[0].id);
+      });
     });
-
-    // Add click event listener to the toggle button
-    toggleButton.addEventListener('click', () => {
-        chrome.storage.local.get(['overlayEnabled'], (result) => {
-            //2 variables: past and present after click
-            const enabled = result.overlayEnabled !== false; // default to true if not set
-            const newEnabledState = !enabled;
-
-            //also, chenges overlayEnabled varuable to newEnabledState
-            chrome.storage.local.set({ overlayEnabled: newEnabledState }, () => {
-                //change the button based on whether its enabled or not
-                toggleButton.textContent = newEnabledState ? 'Disable Overlays' : 'Enable Overlays';
-
-                // Reload the YouTube page to apply changes
-                chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-                    chrome.tabs.reload(tabs[0].id);
-                });
-            });
-        });
-    });
+  });
 });
