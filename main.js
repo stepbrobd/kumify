@@ -10,15 +10,25 @@
 
     // get all yt thumbnails
     function getThumbnails() {
-      const thumbnails = document.querySelectorAll(
-        "ytd-thumbnail:not(.ytd-video-preview, .ytd-rich-grid-slim-media) a > yt-image > img.yt-core-image:only-child:not(.yt-core-attributed-string__image-element),.ytp-videowall-still-image:not([style*='extension:'])",
+      let thumbnails = document.querySelectorAll(
+        "img[src*='i.ytimg.com/vi/'], " +
+          "img[src*='maxresdefault'], " +
+          "img[src*='hqdefault'], " +
+          "img[src*='mqdefault'], " +
+          "img[src*='sddefault']",
       );
 
-      // For each image in the thumbnails array (which is thumbnail), get its image index, its base url, and then send it to
-      // apply thumbnails for a merge
+      // filter out shorts thumbnails
+      thumbnails = Array.from(thumbnails).filter((img) => {
+        return !img.classList.contains("shortsLockupViewModelHostThumbnail") &&
+          !img.closest("ytm-shorts-lockup-view-model") &&
+          !img.closest("ytm-shorts-lockup-view-model-v2");
+      });
+
+      console.log(`Found ${thumbnails.length} thumbnails (excluding Shorts)`);
+
       thumbnails.forEach((thumbnail) => {
         const index = getRandomImageIndex();
-        // Get the URL of the random image
         let OverlayUrl = getOverlayUrl(index);
         changeThumbnail(thumbnail, OverlayUrl);
       });

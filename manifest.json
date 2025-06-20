@@ -9,7 +9,7 @@
   "action": { "default_popup": "popup.html" },
   "content_scripts": [{
     "js": ["main.js"],
-    "matches": ["https://www.youtube.com/*"],
+    "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
     "run_at": "document_idle"
   }],
   "web_accessible_resources": [{
