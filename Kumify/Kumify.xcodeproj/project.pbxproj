@@ -13,8 +13,8 @@
 		8C29E5422E05EDE900E7ADD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C29E5402E05EDE900E7ADD8 /* Main.storyboard */; };
 		8C29E54B2E05EDE900E7ADD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29E54A2E05EDE900E7ADD8 /* AppDelegate.swift */; };
 		8C29E54E2E05EDE900E7ADD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C29E54C2E05EDE900E7ADD8 /* Main.storyboard */; };
-		8C29E5552E05EDE900E7ADD8 /* Kumify Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C29E5542E05EDE900E7ADD8 /* Kumify Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8C29E55F2E05EDE900E7ADD8 /* Kumify Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C29E55E2E05EDE900E7ADD8 /* Kumify Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C29E5552E05EDE900E7ADD8 /* Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C29E5542E05EDE900E7ADD8 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C29E55F2E05EDE900E7ADD8 /* Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8C29E55E2E05EDE900E7ADD8 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C29E5642E05EDE900E7ADD8 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8C29E5292E05EDE800E7ADD8 /* Main.html */; };
 		8C29E5652E05EDE900E7ADD8 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8C29E5292E05EDE800E7ADD8 /* Main.html */; };
 		8C29E5662E05EDE900E7ADD8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29E52B2E05EDE800E7ADD8 /* Icon.png */; };
@@ -67,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8C29E5552E05EDE900E7ADD8 /* Kumify Extension.appex in Embed Foundation Extensions */,
+				8C29E5552E05EDE900E7ADD8 /* Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8C29E55F2E05EDE900E7ADD8 /* Kumify Extension.appex in Embed Foundation Extensions */,
+				8C29E55F2E05EDE900E7ADD8 /* Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,9 +103,9 @@
 		8C29E54A2E05EDE900E7ADD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C29E54D2E05EDE900E7ADD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C29E54F2E05EDE900E7ADD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C29E5542E05EDE900E7ADD8 /* Kumify Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kumify Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C29E5542E05EDE900E7ADD8 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C29E5592E05EDE900E7ADD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C29E55E2E05EDE900E7ADD8 /* Kumify Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kumify Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C29E55E2E05EDE900E7ADD8 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C29E5632E05EDE900E7ADD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C29E5832E05EDE900E7ADD8 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../popup.js; sourceTree = "<group>"; };
 		8C29E5842E05EDE900E7ADD8 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../popup.html; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 			children = (
 				8C29E5362E05EDE900E7ADD8 /* Kumify.app */,
 				8C29E5482E05EDE900E7ADD8 /* Kumify.app */,
-				8C29E5542E05EDE900E7ADD8 /* Kumify Extension.appex */,
-				8C29E55E2E05EDE900E7ADD8 /* Kumify Extension.appex */,
+				8C29E5542E05EDE900E7ADD8 /* Extension.appex */,
+				8C29E55E2E05EDE900E7ADD8 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 			productReference = 8C29E5482E05EDE900E7ADD8 /* Kumify.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8C29E5532E05EDE900E7ADD8 /* Kumify Extension (iOS) */ = {
+		8C29E5532E05EDE900E7ADD8 /* Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C29E5742E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Kumify Extension (iOS)" */;
+			buildConfigurationList = 8C29E5742E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Extension (iOS)" */;
 			buildPhases = (
 				8C29E5502E05EDE900E7ADD8 /* Sources */,
 				8C29E5512E05EDE900E7ADD8 /* Frameworks */,
@@ -310,16 +310,16 @@
 			);
 			dependencies = (
 			);
-			name = "Kumify Extension (iOS)";
+			name = "Extension (iOS)";
 			packageProductDependencies = (
 			);
 			productName = "Kumify Extension (iOS)";
-			productReference = 8C29E5542E05EDE900E7ADD8 /* Kumify Extension.appex */;
+			productReference = 8C29E5542E05EDE900E7ADD8 /* Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		8C29E55D2E05EDE900E7ADD8 /* Kumify Extension (macOS) */ = {
+		8C29E55D2E05EDE900E7ADD8 /* Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C29E57B2E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Kumify Extension (macOS)" */;
+			buildConfigurationList = 8C29E57B2E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Extension (macOS)" */;
 			buildPhases = (
 				8C29E55A2E05EDE900E7ADD8 /* Sources */,
 				8C29E55B2E05EDE900E7ADD8 /* Frameworks */,
@@ -329,11 +329,11 @@
 			);
 			dependencies = (
 			);
-			name = "Kumify Extension (macOS)";
+			name = "Extension (macOS)";
 			packageProductDependencies = (
 			);
 			productName = "Kumify Extension (macOS)";
-			productReference = 8C29E55E2E05EDE900E7ADD8 /* Kumify Extension.appex */;
+			productReference = 8C29E55E2E05EDE900E7ADD8 /* Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -375,9 +375,9 @@
 			projectRoot = "";
 			targets = (
 				8C29E5352E05EDE900E7ADD8 /* Kumify (iOS) */,
+				8C29E5532E05EDE900E7ADD8 /* Extension (iOS) */,
 				8C29E5472E05EDE900E7ADD8 /* Kumify (macOS) */,
-				8C29E5532E05EDE900E7ADD8 /* Kumify Extension (iOS) */,
-				8C29E55D2E05EDE900E7ADD8 /* Kumify Extension (macOS) */,
+				8C29E55D2E05EDE900E7ADD8 /* Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -479,12 +479,12 @@
 /* Begin PBXTargetDependency section */
 		8C29E5572E05EDE900E7ADD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8C29E5532E05EDE900E7ADD8 /* Kumify Extension (iOS) */;
+			target = 8C29E5532E05EDE900E7ADD8 /* Extension (iOS) */;
 			targetProxy = 8C29E5562E05EDE900E7ADD8 /* PBXContainerItemProxy */;
 		};
 		8C29E5612E05EDE900E7ADD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8C29E55D2E05EDE900E7ADD8 /* Kumify Extension (macOS) */;
+			target = 8C29E55D2E05EDE900E7ADD8 /* Extension (macOS) */;
 			targetProxy = 8C29E5602E05EDE900E7ADD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -661,7 +661,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepbrobd.kumify.extension;
-				PRODUCT_NAME = "Kumify Extension";
+				PRODUCT_NAME = Extension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -694,7 +694,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepbrobd.kumify.extension;
-				PRODUCT_NAME = "Kumify Extension";
+				PRODUCT_NAME = Extension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -814,7 +814,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepbrobd.kumify.extension;
-				PRODUCT_NAME = "Kumify Extension";
+				PRODUCT_NAME = Extension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -849,7 +849,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepbrobd.kumify.extension;
-				PRODUCT_NAME = "Kumify Extension";
+				PRODUCT_NAME = Extension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -957,7 +957,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C29E5742E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Kumify Extension (iOS)" */ = {
+		8C29E5742E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C29E5752E05EDE900E7ADD8 /* Debug */,
@@ -975,7 +975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C29E57B2E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Kumify Extension (macOS)" */ = {
+		8C29E57B2E05EDE900E7ADD8 /* Build configuration list for PBXNativeTarget "Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C29E57C2E05EDE900E7ADD8 /* Debug */,

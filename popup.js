@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("overlay-toggle");
+  const checkbox = document.getElementById("kumify");
 
   chrome.storage.local.get(["overlayEnabled"], (result) => {
     const enabled = result.overlayEnabled !== false;
