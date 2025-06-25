@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Kumify",
-  "description": "Kumiko on every YouTube thumbnail!",
-  "version": "2025.625.0",
+  "description": "Kumiko on YouTube thumbnails!",
+  "version": "2025.625.1",
   "icons": { "128": "assets/icon/icon.png" },
   "host_permissions": ["https://www.youtube.com/*"],
   "permissions": ["storage"],
